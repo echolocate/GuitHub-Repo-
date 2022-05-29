@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>GuitHub Repo! Order</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <img src="\images\guithub-logo.png" alt="GuitHub Repo logo" />
+        </div>
+    </header>
+
+    <nav id="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="guitars.html">Guitars</a></li>
+                <li><a href="amps.html">Amps</a></li>
+                <li><a href="effects.html">Effects</a></li>
+                <li><a href="contact-form.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Order Form</h1>
+        </div>
+    </section>
+
+    <!-- Didn't get around to validating all fields populated when submitting form 
+            Just returns to home page, needs to alert customer to unfilled fields-->
+
+    <!-- Split page into 2 columns from here on down for Shipping details and Card info  -->
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <h1>Ship to</h1>
+                <section>
+                    <label class="labels" for="firstname">First Name</label>
+                    <input class="input-fields" type="text" name="firstname" id="firstname"
+                        placeholder="Enter your first name" required>
+                    <label class="labels" for="lastname">Last Name</label>
+                    <input class="input-fields" type="text" name="lastname" id="lastname"
+                        placeholder="Enter your last name" required>
+                    <label class="labels" for="email">Email</label>
+                    <input class="input-fields" type="email" name="email" id="email"
+                        placeholder="Enter your email address" required>
+                    <label class="labels" for="staddress">Shipping Address</label>
+                    <input class="input-fields" type="text" name="staddress" id="staddress-1"
+                        placeholder="Enter house number, street" required>
+                    <label class="labels" for="postcode">Postcode</label>
+                    <input class="input-fields" type="text" name="postcode" id="postcode" placeholder="Enter postcode"
+                        required>
+                    <label class="labels" for="phone">Phone Number</label>
+                    <input class="input-fields" type="tel" name="phone" id="phone" placeholder="Enter your phone number"
+                        required>
+                </section>
+            </div>
+
+            <div class="column">
+                <h1>Credit or Debit Card</h1>
+                <label class="labels" for="cardname">Name as it appears on card</label>
+                <input class="input-fields" type="text" name="cardname" id="cardname" placeholder="eg MR JOE BLOGGS"
+                    required>
+                <label class="labels" for="cardnumber">Card Number</label>
+                <input class="input-fields" type="number" name="cardnumber" id="cardnumber"
+                    placeholder="Enter long number on front of card" required>
+
+                <!-- This was a pain, modifying date field to MM/YY, copied code from StackOverflow
+                Now stores MM and YY as seperate values, may be a problem later, but I am not 
+                going to spend time fixing this now... -->
+                <label class="labels" for="expdate">Expiry Date</label>
+                <div class="input-small">
+                    <span class="expiration">
+                        <input type="text" name="expmonth" placeholder="MM" maxlength="2" size="2" />
+                        <span>/</span>
+                        <input type="text" name="expyear" placeholder="YY" maxlength="2" size="2" />
+                    </span>
+                </div>
+                <!-- No 3-digit validation -->
+                <label class="labels" for="cvc">CVC Number</label>
+                <input class="input-small" type="number" name="cvc" id="cvc"
+                    placeholder="Enter 3-digit number on back of card" required><br><br>
+                <a href="\order-complete.html">
+                    <button class="button" type="submit">
+                        <h2>Complete Payment</h2>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

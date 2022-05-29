@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>GuitHub Repo! Home</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="container">
+      <img src="\images\guithub-logo.png" alt="GuitHub Repo logo" />
+    </div>
+  </header>
+
+  <nav id="navbar">
+    <div class="container">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="guitars.html">Guitars</a></li>
+        <li><a href="amps.html">Amps</a></li>
+        <li><a href="effects.html">Effects</a></li>
+        <li><a href="contact-form.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="showcase">
+    <div class="container">
+      <h1>"We go up to <em>11 !!!</em>"</h1>
+    </div>
+  </section>
+
+  <!-- Javascript code copied from 'Traversy Media' YouTube video, don't understand
+  it, all I know is that it helps me check the information the user enters 
+  into the form fields is stored -->
+
+  <body>
+    <div id="results"></div>
+    <a href="index.html">
+      <button class="button" type="submit">
+        <h2>Complete Payment</h2>
+      </button></a>
+    <script>
+      const resultsList = document.getElementById("results");
+      new URLSearchParams(window.location.search).forEach((name, value) => {
+        resultsList.append(`${value}: ${name}`);
+        resultsList.append(document.createElement("br"));
+      });
+    </script>
+    </div>
+  </body>
+
+</html>

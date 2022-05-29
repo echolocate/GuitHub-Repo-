@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>GuitHub Repo! Register</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <img src="\images\guithub-logo.png" alt="GuitHub Repo logo" />
+        </div>
+    </header>
+
+    <nav id="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="guitars.html">Guitars</a></li>
+                <li><a href="amps.html">Amps</a></li>
+                <li><a href="effects.html">Effects</a></li>
+                <li><a href="contact-form.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Register</h1>
+        </div>
+    </section>
+
+    <!-- Very little verification, the 'form...action' line was copied from a YouTube video,
+            see comment in results.html -->
+    <div class="container">
+        <form class="user-forms" action="results.html" method="GET">
+            <label class="labels" for="title" class="labels">
+                <h3>Title</h3>
+            </label>
+            <select class="dropdown" name="title" id="title">
+                <option label="Mrs" value="Mrs"></option>
+                <option label="Mr" value="Mr"></option>
+                <option label="Ms" value="Ms"></option>
+                <option label="Prefer not to say" value="Other"></option>
+            </select>
+            <div class="form-group">
+                <label class="labels" for="first-name">
+                    <h3>First Name:</h3>
+                </label>
+                <input class="input-fields" type="text" name="first-name" id="first-name"
+                    placeholder="Enter your first name" required>
+            </div>
+            <div class="form-group">
+                <label class="labels" for="last-name">
+                    <h3>Last Name:</h3>
+                </label>
+                <input class="input-fields" type="text" name="last-name" id="last-name"
+                    placeholder="Enter your last name" required>
+            </div>
+            <div class="form-group">
+                <label class="labels" for="email">
+                    <h3>Email</h3>
+                </label>
+                <input class="input-fields" type="email" name="email" id="email" placeholder="Enter your email address"
+                    required>
+            </div>
+            <div class="form-group">
+                <label class="labels" for="password">
+                    <h3>Choose a Password</h3>
+                </label>
+                <input class="input-fields" type="password" name="password" id="password" required>
+            </div>
+            <h3>Do you agree to be mercilessly hounded by advertisers
+                when we sell all your personal data as the only way a
+                business like ours keeps afloat?<br>(We're going to sell it anyway).<br></h3>
+            <div class="radio">
+                <input type="radio" name="opt-in" id="yes" value="yes">
+                <label class="labels" for="yes">
+                    <h3>Yes</h3>
+                </label>
+                <input type="radio" name="opt-in" id="no" value="no">
+                <label class="labels" for="no">
+                    <h3>No</h3>
+                </label>
+            </div>
+            <div>
+                <br><br><br>
+                <button class="button" type="submit">
+                    <h2>Submit</h2>
+                </button>
+            </div>
+        </form>
+    </div>
+    <footer class="main-footer">
+        <p>Copyright &copy; 2022 sleEzBay. All Rii-i-ii-ght's Deserved</p>
+    </footer>
+</body>
+
+</html>
